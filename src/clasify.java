@@ -18,7 +18,7 @@ public class clasify
 		
 		Scanner in = new Scanner(System.in);
 		String location="";
-		System.out.println("Please give location of the image");
+		System.out.println("Please give location of the images");
 		location = in.nextLine();
 		
 		/*
@@ -30,7 +30,7 @@ public class clasify
 		ArrayList<File> files = new ArrayList<File>(Arrays.asList(f.listFiles()));
 		int size = files.size();
 		if (size >10){
-			size = 10;
+			size = 10;////////////// CHANGE HERE TO SET MAX PICS AT ONE TIME
 		}
 		for(int lcv = 0; lcv<size; lcv++){
 		
